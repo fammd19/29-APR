@@ -7,4 +7,4 @@ CREATE TABLE IF NOT EXISTS students (
 
 INSERT INTO students (first, last, degree) VALUES 
 ("Fi", "M", "CS"),
-("Mack", "F", "Maths")
+("Mack", "F", "Maths");
