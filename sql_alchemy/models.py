@@ -26,3 +26,15 @@ class Song(Base):
 
 
 #note - doing actual execution in app.py
+
+class Task(Base):
+    __tablename__ = "base"
+
+    id = Column (Integer(), primary_key=True)
+    task_title = Column (String(), nullable=False)
+    task_description = Column (String())
+
+    def __repr__(self):
+        return f"{self.id}: {self.task_title}"
+
+    
