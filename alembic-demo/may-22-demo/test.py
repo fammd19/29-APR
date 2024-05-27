@@ -8,6 +8,25 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 if __name__ == "__main__":
+
+    orders = session.query(Order).all()
+
+    for order in orders:
+        print(order.user)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     # user1 = session.query(User).filter(User.id==1).first()
     # user2 = session.query(User).filter(User.id==2).first()
 
@@ -25,9 +44,4 @@ if __name__ == "__main__":
 
     # print(f"{user2.username}")
     # print(user2.orders)
-
-    orders = session.query(Order).all()
-
-    for order in orders:
-        print(order.user)
 
